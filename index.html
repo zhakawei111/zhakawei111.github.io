@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body {
+            /* 修改为深色渐变背景 */
+            background: linear-gradient(to bottom, #333333, #111111);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+        }
+
+        .contact-item a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        /* 为电话图标添加样式 */
+        .phone-icon {
+            color: #00aaff;
+            margin-right: 8px;
+        }
+        
+        button {
+            background: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0088cc;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>联系我们</h2>
+    <div class="contact-item">
+        <span><i class="fa fa-phone phone-icon"></i>咨询电话：0311-83299777</span>
+        <a href="tel:0311-83299777">打电话</a>
+    </div>
+    <div class="contact-item">
+        <span><i class="fa fa-phone phone-icon"></i>咨询电话：15631100856</span>
+        <a href="tel:15631100856">打电话</a>
+    </div>
+    <div class="contact-item">
+        <span><i class="fa fa-weixin phone-icon"></i>DY15631100856</span>
+        <a href="weixin://dl/business/?t=DY15631100856">加微信</a> 
+        <!-- 微信加好友协议可能因环境等有不同适配，此为简易示例，实际效果需测试 -->
+    </div>
+    <div class="contact-item">
+        <span><i class="fa fa-envelope phone-icon"></i>dongyidiaohuang@163.com</span>
+        <a href="mailto:dongyidiaohuang@163.com">发邮件</a>
+    </div>
+    <div class="contact-item">
+        <span><i class="fa fa-map-marker phone-icon"></i>辛集国际皮革城一期三楼挪威大道3105号</span>
+        <a href="https://maps.google.com/?q=辛集国际皮革城一期三楼挪威大道3105号" target="_blank">去导航</a> 
+        <!-- 这里用谷歌地图示例，也可替换为百度地图等国内地图链接，如百度地图：https://api.map.baidu.com/geocoder?address=...  ，按对应地图接口规则拼接地址 -->
+    </div>
+    <button style="display: block; margin: 20px auto; padding: 10px 20px;">保存到通讯录</button> 
+    <!-- 保存到通讯录功能，纯前端难直接实现，若需真实功能，需结合移动端系统的联系人添加接口（如iOS的Contacts框架、Android的联系人provider等），通常要原生开发或混合开发配合，这里仅做按钮展示  -->
+</body>
+
+</html>
